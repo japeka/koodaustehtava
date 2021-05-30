@@ -30,6 +30,7 @@ $(document).on("click", "p[class='add']", function() {
         parts[parts.length-1] = lastDigit;
         let newNodeValue = parts.join('.').toString();
         let origParts = dataValue.split('.');
+        if(!origParts && !origParts.length) return;
         let left = origParts.length;
         let paddingLeftValue = left + 1;
         $(`
