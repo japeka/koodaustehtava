@@ -50,8 +50,8 @@ $(document).on("click", "p[class='add']", function() {
     }
 });
 const getData = () => {
-    $(`<p data-value="1">Noodi 1</p>
-       <p data-value="1" class="add" style="padding-left: 1em;">[Lisää]</p>
-    `).insertBefore(document.body);
+ $(document.body).append($(`<p data-value="1">Noodi 1</p>
+    <p data-value="1" class="add" style="padding-left: 1em;">[Lisää]</p>
+ `));
 }
 getData();
